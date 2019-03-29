@@ -1,0 +1,7 @@
+/.AppleDouble
+/.AppleDouble/*
+/bin
+/lib
+/share
+/templates
+*.cfg
