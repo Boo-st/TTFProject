@@ -9,6 +9,10 @@ app = Flask(__name__)
 def db():
 	conn = sqlite3.connect('/home/pi/TTFProject/flaskdb/venv/TTF.db')
 	c = conn.cursor()
-	data = c.execute('SELECT * FROM ttf;')
+	data = c.execute('SELECT * FROM userData UNION SELECT * FROM weather;')
 	clean = str(data.fetchall())
+#	return(render_template('index.html', data=data))
 	return(clean)
+if __name__ == "__main__":
+	app.run()
+
