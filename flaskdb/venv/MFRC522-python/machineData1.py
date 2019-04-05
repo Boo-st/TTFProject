@@ -34,8 +34,8 @@ def insertData(conn, sqlStatement):
 
 def main():
 	dateTime = datetime.datetime.now()
-	ID = getID()
 	temperature, humidity = dht11.getData()
+	ID = getID()
 
 	database = ("/home/pi/TTFProject/flaskdb/venv/TTF.db")
 
