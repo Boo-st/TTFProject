@@ -1,8 +1,9 @@
-/.AppleDouble
-/.AppleDouble/*
+.AppleDouble
+.AppleDouble/*
 /bin/*
 /lib/*
 /share/*
 /templates/*
 *.cfg
 *.db
+.DS_Store
